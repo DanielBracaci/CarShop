@@ -1,0 +1,19 @@
+﻿<Window x:Class="CarShopWpf3.View.ClientView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarShopWpf3.View"
+        mc:Ignorable="d"
+        Title="ClientView" Height="450" Width="800">
+    <!-- ClientView.xaml -->
+    <DataGrid ItemsSource="{Binding Clients}" SelectedItem="{Binding SelectedClient}" AutoGenerateColumns="True">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+            <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" />
+            <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
+            <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+        </DataGrid.Columns>
+    </DataGrid>
+
+</Window>
